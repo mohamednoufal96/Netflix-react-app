@@ -2,7 +2,7 @@ const API_KEY = "38c8bbd3f93621ef2ba421b03fe285ed";
 
 const requests = {
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
-    fetchNetflixOriginals: `discover/tv?api_key=${API_KEY}&with_networks=213`,
+    fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
     fetchTopRated: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
     fetchActionMovies: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
     fetchComedyMovies: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
@@ -10,5 +10,7 @@ const requests = {
     fetchRomanceMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
     fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
 };
+
+// https://api.themoviedb.org/3/discover/tv?api_key=38c8bbd3f93621ef2ba421b03fe285ed&with_networks=213
 
 export default requests;
