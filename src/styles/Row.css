@@ -9,6 +9,12 @@
     display: none;
 }
 
+.row__posterTitle {
+    margin-top: 10px;
+    padding-left: 10px;
+    color: lightgray;
+}
+
 .row__poster {
     object-fit: contain;
     width: 100%;
